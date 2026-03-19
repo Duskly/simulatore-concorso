@@ -4,21 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mio Simulatore Quiz</title>
-    <style>
-        :root { --primary: #2c3e50; --success: #2ecc71; --error: #e74c3c; --bg: #f4f7f6; }
-        body { font-family: sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 20px; }
-        .quiz-container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 600px; width: 100%; }
-        .header { display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold; color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .question-text { font-size: 1.2rem; margin-bottom: 1.5rem; line-height: 1.4; }
-        .options-container { display: flex; flex-direction: column; gap: 10px; }
-        .option-btn { padding: 15px; border: 2px solid #ddd; border-radius: 8px; background: white; cursor: pointer; text-align: left; transition: 0.2s; font-size: 1rem; }
-        .option-btn:hover:not(:disabled) { border-color: var(--primary); background: #f8f9fa; }
-        .correct { background-color: var(--success) !important; color: white; border-color: var(--success); }
-        .wrong { background-color: var(--error) !important; color: white; border-color: var(--error); }
-        .nav-buttons { display: flex; justify-content: space-between; margin-top: 2rem; gap: 10px; }
-        .nav-btn { padding: 12px 20px; border: none; border-radius: 5px; background: var(--primary); color: white; cursor: pointer; flex: 1; font-weight: bold; }
-        .nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
-    </style>
+   <style>
+    :root { 
+        /* NUOVA PALETTE COLORI DARK (Sostituito il Viola con Ciano) */
+        --primary: #cccccc;     /* Blu Ciano brillante e tecnico */
+        --success: #1b5e20;     /* Verde scuro per le risposte esatte */
+        --error: #b71c1c;       /* Rosso scuro per le risposte errate */
+        --bg: #121212;          /* Sfondo pagina nero/grigio molto scuro */
+        --card-bg: #1e1e1e;     /* Sfondo del contenitore quiz (card) */
+        --text: #e0e0e0;        /* Testo chiaro generale */
+        --border: #333;         /* Colore dei bordi dei bottoni */
+    }
+
+    body { 
+        font-family: sans-serif; 
+        background: var(--bg); 
+        color: var(--text);
+        display: flex; 
+        justify-content: center; 
+        padding: 20px; 
+    }
+
+    .quiz-container { 
+        background: var(--card-bg); 
+        padding: 2rem; 
+        border-radius: 12px; 
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+        max-width: 600px; 
+        width: 100%; 
+    }
+
+    .header { 
+        display: flex; 
+        justify-content: space-between; 
+        margin-bottom: 20px; 
+        font-weight: bold; 
+        color: var(--primary); /* Ora usa il Ciano */
+        border-bottom: 2px solid #333; 
+        padding-bottom: 10px; 
+    }
+
+    .question-text { 
+        font-size: 1.2rem; 
+        margin-bottom: 1.5rem; 
+        line-height: 1.4; 
+        color: #ffffff; /* Bianco per la domanda per massima leggibilità */
+    }
+
+    .options-container { 
+        display: flex; 
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .option-btn { 
+        padding: 15px; 
+        border: 2px solid var(--border); 
+        border-radius: 8px; 
+        background: #252525; /* Sfondo bottone scuro */
+        color: var(--text);
+        cursor: pointer; 
+        text-align: left; 
+        transition: 0.2s; 
+        font-size: 1rem; 
+    }
+
+    .option-btn:hover:not(:disabled) { 
+        border-color: var(--primary); /* Bordo Ciano al passaggio del mouse */
+        background: #2d2d2d; 
+    }
+
+    .correct { 
+        background-color: var(--success) !important; 
+        color: white !important; 
+        border-color: #4caf50 !important; 
+    }
+
+    .wrong { 
+        background-color: var(--error) !important; 
+        color: white !important; 
+        border-color: #f44336 !important; 
+    }
+
+    .nav-buttons { 
+        display: flex; 
+        justify-content: space-between; 
+        margin-top: 2rem; 
+        gap: 10px; 
+    }
+
+    .nav-btn { 
+        padding: 12px 20px; 
+        border: none; 
+        border-radius: 5px; 
+        background: var(--primary); /* Sfondo Ciano */
+        color: #000000;          /* Testo nero per contrasto sul Ciano */
+        cursor: pointer; 
+        flex: 1; 
+        font-weight: bold; 
+    }
+
+    .nav-btn:disabled { 
+        opacity: 0.3; 
+        cursor: not-allowed; 
+    }
+</style>
 </head>
 <body>
 
