@@ -108,6 +108,22 @@
         opacity: 0.3; 
         cursor: not-allowed; 
     }
+            /* Stile per il tasto Reset */
+        .reset-btn {
+            background: transparent;
+            border: 1px solid var(--error);
+            color: var(--error);
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: 0.3s;
+        }
+        .reset-btn:hover {
+            background: var(--error);
+            color: white;
+        }
+
 </style>
 </head>
 <body>
@@ -115,7 +131,10 @@
 <div class="quiz-container">
     <div class="header">
         <span id="progress">Caricamento...</span>
-        <span id="score">Esatte: 0</span>
+        <div>
+            <span id="score" style="margin-right: 15px;">Esatte: 0</span>
+            <button class="reset-btn" onclick="resetQuiz()">Reset</button>
+        </div>
     </div>
 
     <div id="quiz-content">
@@ -124,8 +143,8 @@
     </div>
 
     <div class="nav-buttons">
-        <button class="nav-btn" id="prev-btn" onclick="changeQuestion(-1)">← Precedente</button>
-        <button class="nav-btn" id="next-btn" onclick="changeQuestion(1)">Successiva →</button>
+        <button class="nav-btn" id="prev-btn" onclick="changeQuestion(-1)">← Indietro</button>
+        <button class="nav-btn" id="next-btn" onclick="changeQuestion(1)">Avanti →</button>
     </div>
 </div>
 
@@ -146,13 +165,38 @@
         return arr;
     }
 
+    // Funzione per salvare tutto in memoria
+    function salvaStato() {
+        localStorage.setItem('quiz_currentIndex', currentIndex);
+        localStorage.setItem('quiz_risposteDate', JSON.stringify(risposteDate));
+        localStorage.setItem('quiz_punteggio', punteggio);
+        localStorage.setItem('quiz_ordineDomande', JSON.stringify(domandeMescolate));
+    }
+
     function iniziaQuiz() {
-        // Controllo se la variabile esiste nel file domande.js
         if (typeof databaseDomande === 'undefined') {
-            document.getElementById('question-text').innerHTML = "<span style='color:red'>Errore: Il file 'domande.js' non è stato trovato o è scritto male. Controlla che sia nella stessa cartella dell'HTML!</span>";
+            document.getElementById('question-text').innerHTML = "<span style='color:red'>Errore: File domande.js non trovato.</span>";
             return;
         }
-        domandeMescolate = mescola(databaseDomande);
+
+        // Recupero i dati dal LocalStorage se esistono
+        const savedIndex = localStorage.getItem('quiz_currentIndex');
+        const savedRisposte = localStorage.getItem('quiz_risposteDate');
+        const savedPunteggio = localStorage.getItem('quiz_punteggio');
+        const savedOrdine = localStorage.getItem('quiz_ordineDomande');
+
+        if (savedOrdine) {
+            // Se c'è un test in corso, riprendi quello
+            domandeMescolate = JSON.parse(savedOrdine);
+            currentIndex = parseInt(savedIndex) || 0;
+            risposteDate = JSON.parse(savedRisposte) || {};
+            punteggio = parseInt(savedPunteggio) || 0;
+        } else {
+            // Altrimenti inizia da zero rimescolando
+            domandeMescolate = mescola(databaseDomande);
+        }
+
+        document.getElementById('score').innerText = `Esatte: ${punteggio}`;
         render();
     }
 
@@ -164,7 +208,6 @@
         const container = document.getElementById('options-container');
         container.innerHTML = '';
 
-        // Mescoliamo le risposte solo se non è già stata data una risposta
         if (!q._opzioniMescolate) {
             q._opzioniMescolate = mescola(q.answers);
         }
@@ -185,6 +228,7 @@
                         punteggio++;
                         document.getElementById('score').innerText = `Esatte: ${punteggio}`;
                     }
+                    salvaStato(); // Salva ogni volta che rispondi
                     render();
                 };
             }
@@ -193,6 +237,8 @@
 
         document.getElementById('prev-btn').disabled = currentIndex === 0;
         document.getElementById('next-btn').disabled = currentIndex === domandeMescolate.length - 1;
+        
+        salvaStato(); // Salva la posizione corrente
     }
 
     function changeQuestion(step) {
@@ -200,7 +246,13 @@
         render();
     }
 
-    // Aspetta un secondo che il file JS venga letto
+    function resetQuiz() {
+        if (confirm("Vuoi davvero ricominciare da capo? Perderai tutti i progressi.")) {
+            localStorage.clear();
+            location.reload(); // Ricarica la pagina per azzerare tutto
+        }
+    }
+
     window.onload = iniziaQuiz;
 </script>
 </body>
