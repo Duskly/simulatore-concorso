@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mio Simulatore Quiz</title>
-   <style>
+    <style>
     :root { 
         /* NUOVA PALETTE COLORI DARK (Sostituito il Viola con Ciano) */
         --primary: #cccccc;     /* Blu Ciano brillante e tecnico */
@@ -16,99 +16,36 @@
         --border: #333;         /* Colore dei bordi dei bottoni */
     }
 
-    body { 
-        font-family: sans-serif; 
-        background: var(--bg); 
-        color: var(--text);
-        display: flex; 
-        justify-content: center; 
-        padding: 20px; 
-    }
+        body { 
+            font-family: sans-serif; 
+            background: var(--bg); 
+            color: var(--text);
+            display: flex; 
+            justify-content: center; 
+            padding: 20px; 
+        }
 
-    .quiz-container { 
-        background: var(--card-bg); 
-        padding: 2rem; 
-        border-radius: 12px; 
-        box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
-        max-width: 600px; 
-        width: 100%; 
-    }
+        .quiz-container { 
+            background: var(--card-bg); 
+            padding: 2rem; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+            max-width: 600px; 
+            width: 100%; 
+        }
 
-    .header { 
-        display: flex; 
-        justify-content: space-between; 
-        margin-bottom: 20px; 
-        font-weight: bold; 
-        color: var(--primary); /* Ora usa il Ciano */
-        border-bottom: 2px solid #333; 
-        padding-bottom: 10px; 
-    }
+        .header { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 20px; 
+            font-weight: bold; 
+            color: var(--primary); 
+            border-bottom: 2px solid #333; 
+            padding-bottom: 10px; 
+        }
 
-    .question-text { 
-        font-size: 1.2rem; 
-        margin-bottom: 1.5rem; 
-        line-height: 1.4; 
-        color: #ffffff; /* Bianco per la domanda per massima leggibilità */
-    }
-
-    .options-container { 
-        display: flex; 
-        flex-direction: column; 
-        gap: 10px; 
-    }
-
-    .option-btn { 
-        padding: 15px; 
-        border: 2px solid var(--border); 
-        border-radius: 8px; 
-        background: #252525; /* Sfondo bottone scuro */
-        color: var(--text);
-        cursor: pointer; 
-        text-align: left; 
-        transition: 0.2s; 
-        font-size: 1rem; 
-    }
-
-    .option-btn:hover:not(:disabled) { 
-        border-color: var(--primary); /* Bordo Ciano al passaggio del mouse */
-        background: #2d2d2d; 
-    }
-
-    .correct { 
-        background-color: var(--success) !important; 
-        color: white !important; 
-        border-color: #4caf50 !important; 
-    }
-
-    .wrong { 
-        background-color: var(--error) !important; 
-        color: white !important; 
-        border-color: #f44336 !important; 
-    }
-
-    .nav-buttons { 
-        display: flex; 
-        justify-content: space-between; 
-        margin-top: 2rem; 
-        gap: 10px; 
-    }
-
-    .nav-btn { 
-        padding: 12px 20px; 
-        border: none; 
-        border-radius: 5px; 
-        background: var(--primary); /* Sfondo Ciano */
-        color: #000000;          /* Testo nero per contrasto sul Ciano */
-        cursor: pointer; 
-        flex: 1; 
-        font-weight: bold; 
-    }
-
-    .nav-btn:disabled { 
-        opacity: 0.3; 
-        cursor: not-allowed; 
-    }
-/* Icona Refresh stilizzata */
+        /* Icona Refresh stilizzata */
         .refresh-btn {
             background: none;
             border: 1px solid var(--primary);
@@ -129,16 +66,78 @@
             background: var(--primary);
             color: #000;
         }
-</style>
+
+        .question-text { 
+            font-size: 1.2rem; 
+            margin-bottom: 1.5rem; 
+            line-height: 1.4; 
+            color: #ffffff; 
+        }
+
+        .options-container { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px; 
+        }
+
+        .option-btn { 
+            padding: 15px; 
+            border: 2px solid var(--border); 
+            border-radius: 8px; 
+            background: #252525; 
+            color: var(--text);
+            cursor: pointer; 
+            text-align: left; 
+            transition: 0.2s; 
+            font-size: 1rem; 
+        }
+
+        .option-btn:hover:not(:disabled) { 
+            border-color: var(--primary); 
+            background: #2d2d2d; 
+        }
+
+        .correct { 
+            background-color: var(--success) !important; 
+            color: white !important; 
+            border-color: #4caf50 !important; 
+        }
+
+        .wrong { 
+            background-color: var(--error) !important; 
+            color: white !important; 
+            border-color: #f44336 !important; 
+        }
+
+        .nav-buttons { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 2rem; 
+            gap: 10px; 
+        }
+
+        .nav-btn { 
+            padding: 12px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            background: var(--primary); 
+            color: #000;          
+            cursor: pointer; 
+            flex: 1; 
+            font-weight: bold; 
+        }
+
+        .nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+    </style>
 </head>
 <body>
 
 <div class="quiz-container">
     <div class="header">
         <span id="progress">Caricamento...</span>
-        <div>
-            <span id="score" style="margin-right: 15px;">Esatte: 0</span>
-            <button class="reset-btn" onclick="resetQuiz()">Reset</button>
+        <div style="display: flex; align-items: center; gap: 15px;">
+            <span id="score">Esatte: 0</span>
+            <button class="refresh-btn" onclick="resetQuiz()" title="Ricomincia tutto">&#8635;</button>
         </div>
     </div>
 
@@ -170,7 +169,6 @@
         return arr;
     }
 
-    // Funzione per salvare tutto in memoria
     function salvaStato() {
         localStorage.setItem('quiz_currentIndex', currentIndex);
         localStorage.setItem('quiz_risposteDate', JSON.stringify(risposteDate));
@@ -180,24 +178,18 @@
 
     function iniziaQuiz() {
         if (typeof databaseDomande === 'undefined') {
-            document.getElementById('question-text').innerHTML = "<span style='color:red'>Errore: File domande.js non trovato.</span>";
+            document.getElementById('question-text').innerHTML = "<span style='color:red'>Errore caricamento database.</span>";
             return;
         }
 
-        // Recupero i dati dal LocalStorage se esistono
-        const savedIndex = localStorage.getItem('quiz_currentIndex');
-        const savedRisposte = localStorage.getItem('quiz_risposteDate');
-        const savedPunteggio = localStorage.getItem('quiz_punteggio');
         const savedOrdine = localStorage.getItem('quiz_ordineDomande');
 
         if (savedOrdine) {
-            // Se c'è un test in corso, riprendi quello
             domandeMescolate = JSON.parse(savedOrdine);
-            currentIndex = parseInt(savedIndex) || 0;
-            risposteDate = JSON.parse(savedRisposte) || {};
-            punteggio = parseInt(savedPunteggio) || 0;
+            currentIndex = parseInt(localStorage.getItem('quiz_currentIndex')) || 0;
+            risposteDate = JSON.parse(localStorage.getItem('quiz_risposteDate')) || {};
+            punteggio = parseInt(localStorage.getItem('quiz_punteggio')) || 0;
         } else {
-            // Altrimenti inizia da zero rimescolando
             domandeMescolate = mescola(databaseDomande);
         }
 
@@ -233,7 +225,7 @@
                         punteggio++;
                         document.getElementById('score').innerText = `Esatte: ${punteggio}`;
                     }
-                    salvaStato(); // Salva ogni volta che rispondi
+                    salvaStato();
                     render();
                 };
             }
@@ -242,8 +234,7 @@
 
         document.getElementById('prev-btn').disabled = currentIndex === 0;
         document.getElementById('next-btn').disabled = currentIndex === domandeMescolate.length - 1;
-        
-        salvaStato(); // Salva la posizione corrente
+        salvaStato();
     }
 
     function changeQuestion(step) {
@@ -252,9 +243,9 @@
     }
 
     function resetQuiz() {
-        if (confirm("Vuoi davvero ricominciare da capo? Perderai tutti i progressi.")) {
+        if (confirm("Vuoi azzerare i progressi e rimescolare le domande?")) {
             localStorage.clear();
-            location.reload(); // Ricarica la pagina per azzerare tutto
+            location.reload();
         }
     }
 
