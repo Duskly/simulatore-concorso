@@ -671,7 +671,7 @@ const databaseDomande = [
     {
         text: "Per espressa previsione di cui all'art. 3, l. n. 241/1990, l'obbligo di motivazione:",
         answers: ["È espressamente previsto per gli atti concernenti il personale.", "È espressamente previsto per tutti gli atti.", "È previsto solo per gli atti a contenuto generale."],
-        corretta: "È espressamente previsto per gli atti concernenti il personale."
+        corretta: "È espressamente previsto per tutti gli atti."
     },
     {
         text: "L'accesso ai documenti amministrativi, attese le sue rilevanti finalità di pubblico interesse, costituisce (art. 22, comma 2, l. n. 241/1990):",
