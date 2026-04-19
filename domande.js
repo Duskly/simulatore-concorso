@@ -104,16 +104,7 @@ const databaseDomande = [
         answers: ["Turbata libertà del procedimento di scelta del contraente.", "Peculato mediante profitto dell'errore altrui.", "Astensione dagli incanti."],
         corretta: "Peculato mediante profitto dell'errore altrui."
     },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'This is Julie's bed and that's...'.",
-        answers: ["Mine.", "Your.", "My."],
-        corretta: "Mine."
-    },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'Sorry, I ... speak English. Is French OK?'.",
-        answers: ["Can't.", "Do.", "Does."],
-        corretta: "Can't."
-    },
+   
     {
         text: "In un foglio di lavoro di MS Excel, quando si copia la cella C6 che contiene la formula =$C$4+C5 e la si inserisce nella cella D6, viene mostrata la formula?",
         answers: ["=C4+C5", "=D4+D5", "=$C$4+D5"],
@@ -129,27 +120,6 @@ const databaseDomande = [
         answers: ["(PALISSANDRO + TUCUL).", "(PALISSANDRO + NUMISMATICA).", "(PALISSANDRO + TEK)."],
         corretta: "(PALISSANDRO + TEK)."
     },
-    {
-        text: "\"Avere il magone\" sta a \"piangere\" come \"non abbassare lo sguardo\" sta a....",
-        answers: ["Essere orgogliosi.", "Ricordare.", "Rimproverare."],
-        corretta: "Essere orgogliosi."
-    },
-    {
-        text: "\"Loris è appassionato di giardinaggio; tutti gli appassionati di giardinaggio amano camminare; alcuni floricoltori sono appassionati di giardinaggio\". Se le precedenti affermazioni sono vere, quale delle seguenti è sicuramente vera?",
-        answers: ["Loris è un floricoltore.", "Loris ama camminare.", "Tutti i floricoltori amano camminare."],
-        corretta: "Loris ama camminare."
-    },
-    {
-        text: "“Riccio” sta a “..?” come “mallo” sta a “..?”.",
-        answers: ["Castagna - Noce.", "Nocciòlo - Guscio.", "Castagna - Buccia."],
-        corretta: "Castagna - Noce."
-    },
-    {
-        text: "“..?” sta a “Televisore” come “..?” sta a “Radio”.",
-        answers: ["Teatro - rumore.", "Suono - video.", "Immagine - suono."],
-        corretta: "Immagine - suono."
-    }
-    ,
     {
         text: "Il capo I del titolo III del TUEL è dedicato interamente agli organi di governo del Comune e della Provincia. Per l'amministrazione comunale uno di tali tre organi è rappresentato (art 36, comma 1):",
         answers: ["Dal Direttore generale.", "Dal Sindaco.", "Dal Segretario generale."],
@@ -255,52 +225,13 @@ const databaseDomande = [
         answers: ["Frode nelle pubbliche forniture.", "Violenza o minaccia a un pubblico ufficiale.", "Rifiuto di atti d'ufficio. Omissione."],
         corretta: "Rifiuto di atti d'ufficio. Omissione."
     },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'He ....an entire book yesterday'.",
-        answers: ["Had read.", "Read.", "Have read."],
-        corretta: "Read."
-    },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'I know Peter, I work with...'.",
-        answers: ["He.", "Him.", "His."],
-        corretta: "Him."
-    },
-    {
-        text: "In MS Word, quale tra i seguenti NON è un tipo di Carattere?",
-        answers: ["Barrato.", "Arial.", "Abadi."],
-        corretta: "Barrato."
-    },
+
     {
         text: "In MS EXCEL, che combinazione di tasti devo digitare per iniziare una nuova riga nella stessa cella?",
         answers: ["Alt+INVIO.", "Ctrl+INVIO.", "Maiusc+INVIO."],
         corretta: "Alt+INVIO."
     },
-    {
-        text: "MISURA sta a (METRO + YARD) come HOBBY sta a ....",
-        answers: ["(BRICOLAGE + EBANO).", "(BRICOLAGE + PUEBLO).", "(BRICOLAGE + FILATELIA)."],
-        corretta: "(BRICOLAGE + FILATELIA)."
-    },
-    {
-        text: "\"Essere al posto giusto nel momento giusto\" sta a \"presenza\" come \"conciare per le feste\" sta a....",
-        answers: ["Malmenare.", "Imbellettare.", "Privare."],
-        corretta: "Malmenare."
-    },
-    {
-        text: "\"Luca è appassionato di caccia; alcuni appassionati di caccia sono cacciatori; i cacciatori non amano la natura\". Se le precedenti affermazioni sono vere, quale delle seguenti è sicuramente vera?",
-        answers: ["Luca è sicuramente un cacciatore.", "Luca non ama sicuramente la natura.", "Luca potrebbe essere un cacciatore."],
-        corretta: "Luca potrebbe essere un cacciatore."
-    },
-    {
-        text: "\"Accappatoio\" sta a \"..?..\" come \"Mocassino\" sta a \"..?..\".",
-        answers: ["Biancheria - Scarpa.", "Biancheria - Abbigliamento.", "Bagno - Scarpa."],
-        corretta: "Biancheria - Scarpa."
-    },
-    {
-        text: "“..?..” sta a “Bosco” come “Goccia” sta a “..?..”.",
-        answers: ["Felce - bicchiere.", "Abete - vaso.", "Albero - mare."],
-        corretta: "Albero - mare."
-    }
-    ,
+
     {
         text: "L'espressione 'organi di governo' contenuta nell'art. 36 del TUEL è riferita agli organi di indirizzo dell'ente locale, ovvero a Sindaco/Presidente della provincia, Giunta e ......:",
         answers: ["Segretario dell'ente.", "Consiglio.", "Collegio dei revisori."],
@@ -406,52 +337,19 @@ const databaseDomande = [
         answers: ["Usurpazione di funzioni pubbliche.", "Violazione di sigilli.", "Corruzione per un atto contrario ai doveri d'ufficio."],
         corretta: "Corruzione per un atto contrario ai doveri d'ufficio."
     },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'This T-shirt is smaller ... the other one'.",
-        answers: ["Than.", "Then.", "Of."],
-        corretta: "Than."
-    },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'What time ... the lesson start yesterday?'.",
-        answers: ["Does.", "Do.", "Did."],
-        corretta: "Did."
-    },
+
     {
         text: "In un foglio di lavoro di MS Excel, quale tra i seguenti operatori deve essere utilizzato per il concatenamento di stringhe?",
         answers: ["$", "^", "&"],
         corretta: "&"
     },
-    {
-        text: "In una diapositiva (slide) di MS PowerPoint è possibile far muovere gli 'oggetti'?",
-        answers: ["Si, usando i movimenti.", "Si, usando le animazioni.", "No, non è possibile far muovere gli 'oggetti'."],
-        corretta: "Si, usando le animazioni."
-    },
+
     {
         text: "Completare la seguente proporzione: Y (suicidio) : X (se stessi) = Y (...?...) : X (...?...).",
         answers: ["Y (parricidio) : X (ascendente-discendente).", "Y (parricidio) : X (intero popolo).", "Y (parricidio) : X (intero potere politico)."],
         corretta: "Y (parricidio) : X (ascendente-discendente)."
     },
-    {
-        text: "Se 'preparare di nascosto un'azione a danno di altri' sta a 'tramare' allora 'mettere insieme o aggiustare qualcosa alla bell'e meglio' sta a:",
-        answers: ["Invelenire.", "Esacerbare.", "Abborracciare."],
-        corretta: "Abborracciare."
-    },
-    {
-        text: "1) Merlino è appassionato di scacchi. 2) Alcuni appassionati di scacchi sono damisti. 3) I damisti non amano giocare d'azzardo. Se le precedenti affermazioni sono vere, quale delle seguenti è sicuramente vera?",
-        answers: ["Merlino non ama sicuramente giocare d'azzardo.", "Merlino è sicuramente un damista.", "Merlino potrebbe essere un damista."],
-        corretta: "Merlino potrebbe essere un damista."
-    },
-    {
-        text: "'Lingua' sta a 'Gustare' come 'Naso' sta a '..?..'.",
-        answers: ["Lente.", "Odorare.", "Bocca."],
-        corretta: "Odorare."
-    },
-    {
-        text: "'Piede' sta a '..?..' come 'Zoccolo' sta a '..?..'.",
-        answers: ["Animale - Cavallo.", "Uomo - Cavallo.", "Mano - Cavallo."],
-        corretta: "Uomo - Cavallo."
-    }
-    ,
+
     {
         text: "Il capo I del titolo III del TUEL è dedicato interamente agli organi di governo del Comune e della Provincia. Per l'amministrazione comunale uno di tali tre organi è rappresentato (art 36, comma 1):",
         answers: ["Dalla Giunta.", "Dal Segretario generale.", "Dal Direttore generale."],
@@ -557,16 +455,7 @@ const databaseDomande = [
         answers: ["Astensione dagli incanti.", "Peculato.", "Violenza o minaccia ad un corpo politico, amministrativo o giudiziario o ai suoi singoli componenti."],
         corretta: "Peculato."
     },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'Sorry, I can't now. I ... to the lesson'.",
-        answers: ["Am listening.", "Are listening.", "Was listening."],
-        corretta: "Am listening."
-    },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'These books are great, I love ...'.",
-        answers: ["They.", "Their.", "Them."],
-        corretta: "Them."
-    },
+
     {
         text: "Utilizzando MS Excel, quale formula deve essere introdotta nella cella A10 se vogliamo che essa mostri il risultato del prodotto delle cifre inserite nelle celle A2 e A3?",
         answers: ["=A2;'per';A3", "=A2*A3", "=A2:A3"],
@@ -577,21 +466,7 @@ const databaseDomande = [
         answers: ["Viene aperta la finestra che consente di aprire un documento.", "Viene aperto un nuovo documento.", "Viene selezionato tutto il contenuto del documento."],
         corretta: "Viene selezionato tutto il contenuto del documento."
     },
-    {
-        text: "ARMA sta a (CLAVA + ARIETE) come TERRENO sta a ....",
-        answers: ["(AGRO + SUOLO).", "(AGRO + SUGHERO).", "(AGRO + MERCURIO)."],
-        corretta: "(AGRO + SUOLO)."
-    },
-    {
-        text: "\"Essere sul punto di scoppiare\" sta a \"pieno\" come \"non voler sentir ragioni\" sta a....",
-        answers: ["Polemica.", "Rassegnazione.", "Ostinazione."],
-        corretta: "Ostinazione."
-    },
-    {
-        text: "\"Marta è appassionata di fotografia; tutti gli appassionati di fotografia non amano il colore rosso; tutti i fotografi sono professionisti\". Se le precedenti affermazioni sono vere, quale delle seguenti è sicuramente vera?",
-        answers: ["Marta non ama il colore rosso.", "Chi non ama il colore rosso è sicuramente appassionato di fotografia.", "Marta è un fotografo."],
-        corretta: "Marta non ama il colore rosso."
-    },
+
     {
         text: "“Mallo” sta a “Noce” come “..?..” sta a “..?..”.",
         answers: ["Riccio - Castagna.", "Faggio - Guscio.", "Castagna - Buccia."],
@@ -708,16 +583,7 @@ const databaseDomande = [
         answers: ["Attentato contro la costituzione dello Stato.", "Falsità materiale commessa dal pubblico ufficiale in atti pubblici.", "Concussione."],
         corretta: "Concussione."
     },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'What a lovely day we.... together last week'.",
-        answers: ["Spent.", "Had spent.", "Has spent."],
-        corretta: "Spent."
-    },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'More than 1.3 million.... go to Las Vegas every year'.",
-        answers: ["Visits.", "Visit.", "Visitors."],
-        corretta: "Visitors."
-    },
+
     {
         text: "In un foglio di lavoro di MS Excel, nella cella A2 si trova la stringa 'Luisa Monaco' e nella cella A1 si inserisce la formula '=TROVA('o';A2;9)', che cosa mostrerà la cella A1?",
         answers: ["ERROR", "12", "5"],
@@ -728,32 +594,13 @@ const databaseDomande = [
         answers: ["No.", "Sì.", "È possibile inserire filmati, animazioni e suoni in una presentazione, ma solo con determinati hardware."],
         corretta: "Sì."
     },
-    {
-        text: "Completare la seguente proporzione: Y (suicidio) : X (se stessi) = Y (...?...) : X (...?...).",
-        answers: ["Y (fratricidio) : X (intero popolo).", "Y (fratricidio) : X (padre).", "Y (fratricidio) : X (fratello)."],
-        corretta: "Y (fratricidio) : X (fratello)."
-    },
-    {
-        text: "Se 'levare via fin dalla radice' sta a 'estirpare' allora 'pensare e dire cose sconnesse' sta a:",
-        answers: ["Invelenire.", "Blandire.", "Vaniloquio."],
-        corretta: "Vaniloquio."
-    },
+
     {
         text: "1) Tutti gli insegnanti sono professori. 2) Alcuni insegnanti di inglese conoscono la lingua francese. 3) Augusto è un insegnante di inglese. Se le precedenti affermazioni sono vere, quale delle seguenti è sicuramente vera?",
         answers: ["Non è detto che Augusto conosca la lingua francese.", "Non è certo che Augusto sia un professore.", "Sicuramente Augusto conosce la lingua francese."],
         corretta: "Non è detto che Augusto conosca la lingua francese."
     },
-    {
-        text: "'Minigonna' sta a 'Vestito' come 'Sandalo' sta a '..?..'.",
-        answers: ["Scarpa.", "Abbigliamento.", "Estate."],
-        corretta: "Scarpa."
-    },
-    {
-        text: "'Tè' sta a '..?..' come 'Caffè' sta a '..?..'.",
-        answers: ["Teiera - Caffettiera.", "Limone - Tazzina.", "Tazza - Caffetteria."],
-        corretta: "Teiera - Caffettiera."
-    }
-    ,
+
     {
         text: "Il capo I del titolo III del TUEL è dedicato interamente agli organi di governo del comune e della provincia. Per l'amministrazione comunale uno di tali tre organi è rappresentato (art. 36, comma 1):",
         answers: ["Dal Collegio dei revisori.", "Dal Segretario comunale.", "Dal Consiglio."],
@@ -859,16 +706,7 @@ const databaseDomande = [
         answers: ["Violazione di sigilli.", "Millantato credito.", "Induzione indebita a dare o promettere utilità."],
         corretta: "Induzione indebita a dare o promettere utilità."
     },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'You have no idea how.... that snake can be!'.",
-        answers: ["Danger.", "Dangerous.", "Endanger."],
-        corretta: "Dangerous."
-    },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'We... a new Tv last month.'.",
-        answers: ["Buy.", "Has bought.", "Bought."],
-        corretta: "Bought."
-    },
+
     {
         text: "Le operazioni di Back Up dei dati del PC servono per....",
         answers: ["Poter avere una copia dei dati e dei programmi in caso di rottura dell'Hard Disk.", "Verificare i settori difettosi dell'Hard Disk.", "Riordinare il contenuto dell'Hard Disk."],
@@ -884,27 +722,13 @@ const databaseDomande = [
         answers: ["Y (tecnocrazìa) : X (prevalere dei tecnici).", "Y (tecnocrazìa) : X (potere nelle mani di pochi).", "Y (tecnocrazìa) : X (potere esercitato in nome della divinità)."],
         corretta: "Y (tecnocrazìa) : X (prevalere dei tecnici)."
     },
-    {
-        text: "Se 'mettere in quiete qualcuno' sta a 'acchetare' allora 'mettere insieme in modo disordinato e confuso qualcosa' sta a:",
-        answers: ["Altercare.", "Ingollare.", "Impasticciare."],
-        corretta: "Impasticciare."
-    },
-    {
-        text: "1) Apollonio è appassionato di filatelia. 2) Tutti gli appassionati di filatelia amano la numismatica. 3) Alcuni bibliofili sono appassionati di filatelia. Se le precedenti affermazioni sono vere, quale delle seguenti è sicuramente vera?",
-        answers: ["Apollonio è un bibliofilo.", "Apollonio ama la numismatica.", "Tutti i bibliofili amano la numismatica."],
-        corretta: "Apollonio ama la numismatica."
-    },
+
     {
         text: "'..?..' sta a 'Tessuto' come 'Rosa' sta a '..?..'.",
         answers: ["Lino - Fiore.", "Lana - Pugno.", "Colore - Pianta."],
         corretta: "Lino - Fiore."
     },
-    {
-        text: "'Zucchero' sta a 'Zuccheriera' come....",
-        answers: ["'Latte' sta a 'Caffè'.", "'Biscotti' sta a 'Biscottiera'.", "'Caffettiera' sta a Tazzina'."],
-        corretta: "'Biscotti' sta a 'Biscottiera'."
-    }
-    ,
+
     {
         text: "L'espressione 'organi di governo' contenuta nell'art. 36 del TUEL è riferita per le amministrazioni comunali, oltre al Sindaco a:",
         answers: ["Consiglio, Giunta e Collegio dei revisori.", "Consiglio e segretario comunale.", "Consiglio e Giunta."],
@@ -1010,16 +834,7 @@ const databaseDomande = [
         answers: ["Turbata libertà degli incanti.", "Oltraggio a pubblico ufficiale.", "Rivelazione ed utilizzazione di segreti di ufficio."],
         corretta: "Rivelazione ed utilizzazione di segreti di ufficio."
     },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'It's important to have a good .... to create memorable images'.",
-        answers: ["Imagine.", "Imaginative.", "Imagination."],
-        corretta: "Imagination."
-    },
-    {
-        text: "Choose the correct word among the following to complete the sentence. 'My parents usually... alone'.",
-        answers: ["Has travelled.", "Travelling.", "Travel."],
-        corretta: "Travel."
-    },
+
     {
         text: "All'interno di quasi tutti i programmi per Windows esiste la Guida in linea, con quale tasto rapido la si può consultare?",
         answers: ["F4.", "F6.", "F1."],
@@ -1035,27 +850,7 @@ const databaseDomande = [
         answers: ["Y (plutocrazìa) : X (potere nelle mani di pochi).", "Y (plutocrazìa) : X (governo di cittadini).", "Y (plutocrazìa) : X (sistema politico di gruppi che detengono la ricchezza)."],
         corretta: "Y (plutocrazìa) : X (sistema politico di gruppi che detengono la ricchezza)."
     },
-    {
-        text: "Se 'rifornire di soldi qualcuno' sta a 'foraggiare' allora 'guardare intensamente, con diletto e ammirazione il viso di una persona' sta a:",
-        answers: ["Vagheggiare.", "Fagocitare.", "Permeare."],
-        corretta: "Vagheggiare."
-    },
-    {
-        text: "1) Aldo è appassionato di pittura. 2) Tutti gli appassionati di pittura non amano i mobili moderni. 3) Tutti i pittori sono laureati. Quale è sicuramente vera?",
-        answers: ["Aldo è un pittore.", "Chi non ama i mobili moderni è appassionato di pittura.", "Aldo non ama i mobili moderni."],
-        corretta: "Aldo non ama i mobili moderni."
-    },
-    {
-        text: "Se 'Scarpone' sta a 'Montagna' allora '?' sta a 'Mare'.",
-        answers: ["Mocassini.", "Infradito.", "Ballerine."],
-        corretta: "Infradito."
-    },
-    {
-        text: "'MARTE' sta a 'dio della guerra' come 'BACCO' sta a ..?..",
-        answers: ["'dio dell'oltretomba'.", "'dio del vino'.", "'dio del fuoco'."],
-        corretta: "'dio del vino'."
-    }
-    ,
+
     {
         text: "Il capo I del titolo III del TUEL è dedicato agli organi di governo. Per l'amministrazione comunale NON è uno di tali tre organi (art 36, comma 1):",
         answers: ["Consiglio.", "Segretario generale.", "Sindaco."],
@@ -1161,16 +956,7 @@ const databaseDomande = [
         answers: ["Abuso di ufficio.", "Abusivo esercizio di una professione.", "Oltraggio a un magistrato in udienza."],
         corretta: "Abuso di ufficio."
     },
-    {
-        text: "Complete the sentence: 'Drinking green tea in the morning can be very ... for your body'.",
-        answers: ["Help.", "Helpfulness.", "Helpful."],
-        corretta: "Helpful."
-    },
-    {
-        text: "Complete the sentence: 'He was really happy when he ... 10 Euros in his pocket'.",
-        answers: ["Found.", "Find.", "Lose."],
-        corretta: "Found."
-    },
+
     {
         text: "In MS Word, quale tra i seguenti è un effetto di Carattere?",
         answers: ["Barrato Doppio.", "Corsivo.", "Arial."],
@@ -1186,21 +972,8 @@ const databaseDomande = [
         answers: ["Prevalere dei tecnici.", "Potere assoluto del sovrano.", "Governo di nobili."],
         corretta: "Governo di nobili."
     },
-    {
-        text: "Quale parola si avvicina di più al termine 'oneroso'?",
-        answers: ["Onorabile.", "Responsabile.", "Faticoso."],
-        corretta: "Faticoso."
-    },
-    {
-        text: "1) Apollonio ama il modellismo. 2) Gli appassionati di modellismo amano gli aquiloni. 3) Alcuni aeromodellisti fanno modellismo. Cosa è sicuramente vero?",
-        answers: ["Apollonio ama gli aquiloni.", "Tutti quelli che amano gli aquiloni fanno modellismo.", "Tutti gli aeromodellisti amano gli aquiloni."],
-        corretta: "Apollonio ama gli aquiloni."
-    },
-    {
-        text: "Se '______' sta a 'Traghetto' allora è logico che 'Cielo' stia a '_____'.",
-        answers: ["Mare - Mongolfiera.", "Rimessa - Aereo.", "Moscone - Caravella."],
-        corretta: "Mare - Mongolfiera."
-    },
+
+
     {
         text: "PONENTINO sta a ROMA come BORA sta a....",
         answers: ["Messina.", "Trieste.", "Vento."],
@@ -1312,16 +1085,7 @@ const databaseDomande = [
         answers: ["Corruzione per l'esercizio della funzione.", "Inadempimento di contratti di pubbliche forniture.", "Resistenza a un pubblico ufficiale."],
         corretta: "Corruzione per l'esercizio della funzione."
     },
-    {
-        text: "Complete the sentence: 'In case you need urgent medical ..... , call 911'.",
-        answers: ["Assistive.", "Assistance.", "Assist."],
-        corretta: "Assistance."
-    },
-    {
-        text: "Complete the sentence: 'The film ... 2 hours. It finished at 8pm'.",
-        answers: ["Last.", "Lasts.", "Lasted."],
-        corretta: "Lasted."
-    },
+
     {
         text: "In Windows, a che cosa serve la sequenza di tasti Win+R?",
         answers: ["A minimizzare tutte le finestre.", "Ad aprire la finestra di dialogo Esegui.", "Ad aprire o chiudere il menu Start."],
@@ -1332,32 +1096,7 @@ const databaseDomande = [
         answers: ["Solo sotto la prima cella.", "Solo se confermata con Invio.", "Sotto tutte e tre le celle."],
         corretta: "Sotto tutte e tre le celle."
     },
-    {
-        text: "Completare la proporzione: Y (suicidio) : X (se stessi) = Y (patricidio) : X (...?...).",
-        answers: ["Coniuge.", "Padre.", "Parente diverso dal padre."],
-        corretta: "Padre."
-    },
-    {
-        text: "Quale parola si avvicina di più al termine 'negligente'?",
-        answers: ["Obbediente.", "Ossequioso.", "Inerte."],
-        corretta: "Inerte."
-    },
-    {
-        text: "1) Tutti gli studenti vanno in biblioteca. 2) Tacito è uno studente. 3) Chi va in biblioteca ama leggere. Cosa è certamente vera?",
-        answers: ["Tacito va spesso in biblioteca.", "Chi ama leggere è uno studente.", "Chi ama leggere va in biblioteca."],
-        corretta: "Tacito va spesso in biblioteca."
-    },
-    {
-        text: "'Scarpa' sta a 'Piede' come 'Colbacco' sta a:",
-        answers: ["Testa.", "Capelli.", "Inverno."],
-        corretta: "Testa."
-    },
-    {
-        text: "'Sciatore' sta a 'Montagna' come....",
-        answers: ["'Città' sta a 'Camminatore'.", "'Pista' sta a 'Racchette'.", "'Nuotatore' sta a 'Mare'."],
-        corretta: "'Nuotatore' sta a 'Mare'."
-    }
-    ,
+
     {
         text: "L'espressione 'organi di governo' contenuta nell'art. 36 del TUEL è riferita per le amministrazioni comunali a:",
         answers: ["Giunta, Consiglio e Sindaco.", "Consiglio, Sindaco e Collegio dei revisori.", "Giunta, Consiglio e Segretario comunale."],
@@ -1463,16 +1202,7 @@ const databaseDomande = [
         answers: ["Oltraggio a un corpo politico.", "Violazione della pubblica custodia di cose.", "Utilizzazione d'invenzioni conosciute per ragione d'ufficio."],
         corretta: "Utilizzazione d'invenzioni conosciute per ragione d'ufficio."
     },
-    {
-        text: "Complete the sentence: 'Today there are... from 30 different countries'.",
-        answers: ["Compete.", "Competitors.", "Competition."],
-        corretta: "Competitors."
-    },
-    {
-        text: "Complete the sentence: 'We .... and danced all the weekend!'.",
-        answers: ["Singed.", "Sung.", "Sang."],
-        corretta: "Sang."
-    },
+
     {
         text: "In Windows, si può aprire la finestra 'Esegui' digitando:",
         answers: ["Win + S", "Win + R", "Tasto logo Windows."],
@@ -1482,26 +1212,6 @@ const databaseDomande = [
         text: "In MS Excel, che combinazione di tasti serve per selezionare l'intero foglio di lavoro?",
         answers: ["Alt + A.", "Maiusc + C.", "Ctrl + A."],
         corretta: "Ctrl + A."
-    },
-    {
-        text: "Completa la relazione: REGICIDIO -> RE come Y -> FRATELLO.",
-        answers: ["Y = FRATICIDIO.", "Y = REATO.", "Y = PARRICIDIO."],
-        corretta: "Y = FRATICIDIO."
-    },
-    {
-        text: "Quale parola si avvicina di più al termine 'irsuto'?",
-        answers: ["Forte.", "Animalesco.", "Peloso."],
-        corretta: "Peloso."
-    },
-    {
-        text: "Filippo è maggiorenne. Tutti i maggiorenni votano. Chi guida ha la patente ed è maggiorenne. Cosa è vero?",
-        answers: ["Tutti coloro che hanno la patente possono votare.", "Filippo guida sicuramente la macchina.", "Filippo ha sicuramente la patente."],
-        corretta: "Tutti coloro che hanno la patente possono votare."
-    },
-    {
-        text: "Se '______' sta a 'Catamarano' allora è logico che 'Cielo' stia a 'Aereo'.",
-        answers: ["Gozzo.", "Mongolfiera.", "Mare."],
-        corretta: "Mare."
     },
     {
         text: "'EFESTO' sta a 'dio del fuoco' come 'MARTE' sta a:",
